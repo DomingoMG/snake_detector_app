@@ -32,10 +32,10 @@ Make sure your device/emulator has access to the camera or file system.
 4. View the result and confidence score.
 
 ## 🚀 Future Improvements
-• Add heatmap visualization using Grad-CAM.
-• Improve dataset with more balanced class distribution.
-• Integrate live video detection mode.
-• Add species-specific detection for invasive snakes.
+- Add heatmap visualization using Grad-CAM.
+- Improve dataset with more balanced class distribution.
+- Integrate live video detection mode.
+- Add species-specific detection for invasive snakes.
 
 ## 🤝 Contributing
 Feel free to open issues or submit PRs to improve the model or app functionality.
