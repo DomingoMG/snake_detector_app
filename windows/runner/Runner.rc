@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "snake_ia_app" "\0"
+            VALUE "CompanyName", "com.domingomg" "\0"
+            VALUE "FileDescription", "snake_detector_app" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "snake_ia_app" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "snake_ia_app.exe" "\0"
-            VALUE "ProductName", "snake_ia_app" "\0"
+            VALUE "InternalName", "snake_detector_app" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 com.domingomg. All rights reserved." "\0"
+            VALUE "OriginalFilename", "snake_detector_app.exe" "\0"
+            VALUE "ProductName", "snake_detector_app" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

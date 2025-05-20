@@ -1,4 +1,4 @@
-package com.example.snake_ia_app
+package com.domingomg.snake_detector_app
 
 import io.flutter.embedding.android.FlutterActivity
 

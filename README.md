@@ -1,8 +1,8 @@
 # 🐍 Snake Detector App
 This mobile app uses a trained machine learning model to detect whether an image contains a **snake** or **not**. It is designed to assist with environmental monitoring and awareness, particularly useful in areas affected by invasive snake species.
 
-Author: Domingo Montesdeoca González
-School: I.E.S LOMO DE LA HERRADURA
+- Author: Domingo Montesdeoca González
+- School: I.E.S LOMO DE LA HERRADURA
 
 ## 📱 Features
 - 📸 Upload or capture an image from your camera.
