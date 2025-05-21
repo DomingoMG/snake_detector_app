@@ -1,4 +1,4 @@
-<img src="/assets/images/logo/logo.png" alt="Logo" width="250">
+<img src="/assets/logo/logo.png" alt="Logo" width="250">
 
 # 🐍 Snake Detector App
 This mobile app uses a trained machine learning model to detect whether an image contains a **snake** or **not**. It is designed to assist with environmental monitoring and awareness, particularly useful in areas affected by invasive snake species.
