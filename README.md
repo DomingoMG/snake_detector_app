@@ -35,10 +35,7 @@ Make sure your device/emulator has access to the camera or file system.
 
 ## Model Accuracy Examples
 ### Correct Predictions (Model performed well):
-- <img src="/docs/good_1.png" alt="Snake Detected Good 1" width="250">
-- <img src="/docs/good_2.png" alt="Snake Detected Good 2" width="250">
-- <img src="/docs/good_3.png" alt="Snake Detected Good 3" width="250">
-- <img src="/docs/good_4.png" alt="Snake Detected Good 3" width="250">
+<img src="/docs/good_1.png" alt="Snake Detected Good 1" width="250"><img src="/docs/good_2.png" alt="Snake Detected Good 2" width="250"><img src="/docs/good_3.png" alt="Snake Detected Good 3" width="250"><img src="/docs/good_4.png" alt="Snake Detected Good 3" width="250">
 The model successfully identified the presence or absence of a snake.
 
 ### Incorrect Predictions (False Positives):
