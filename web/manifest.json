@@ -1,6 +1,6 @@
 {
-    "name": "snake_detector_app",
-    "short_name": "snake_detector_app",
+    "name": "snake_detector",
+    "short_name": "snake_detector",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

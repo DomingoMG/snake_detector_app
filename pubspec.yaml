@@ -1,5 +1,7 @@
-name: snake_detector_app
-description: ""
+name: snake_detector
+description: "A mobile app that uses artificial intelligence to detect whether
+  an image contains a snake or not. Built with Flutter and a TensorFlow-trained
+  image classifier."
 publish_to: 'none'
 version: 0.1.0
 
@@ -7,11 +9,18 @@ environment:
   sdk: ^3.7.0-50.0.dev
 
 dependencies:
+  animate_do: ^4.2.0
+  dio: ^5.8.0+1
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_riverpod: ^2.6.1
+  flutter_secure_storage: ^9.2.4
+  gap: ^3.0.1
   go_router: ^15.1.2
   image_picker: ^1.1.2
   intl: ^0.20.2
+  json_annotation: ^4.9.0
   retrofit: ^4.4.2
 
 dev_dependencies:
@@ -20,6 +29,22 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   json_serializable: ^6.9.5
+  retrofit_generator: ^9.2.0
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/logo/logo.png"
+  web:
+    generate: true
+    image_path: "assets/logo/logo.png"
+  windows:
+    generate: true
+    image_path: "assets/logo/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/logo/logo.png"
 
 flutter:
   uses-material-design: true
