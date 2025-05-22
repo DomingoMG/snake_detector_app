@@ -33,6 +33,23 @@ Make sure your device/emulator has access to the camera or file system.
 3. Wait a few seconds for the prediction.
 4. View the result and confidence score.
 
+## Model Accuracy Examples
+### Correct Predictions (Model performed well):
+- <img src="/docs/good_1.png" alt="Snake Detected Good 1" width="250">
+- <img src="/docs/good_2.png" alt="Snake Detected Good 2" width="250">
+- <img src="/docs/good_3.png" alt="Snake Detected Good 3" width="250">
+- <img src="/docs/good_4.png" alt="Snake Detected Good 3" width="250">
+The model successfully identified the presence or absence of a snake.
+
+### Incorrect Predictions (False Positives):
+- <img src="/docs/bad_1.png" alt="No Snake Detected Bad 1" width="250">
+- <img src="/docs/bad_2.png" alt="No Snake Detected Bad 2" width="250">
+- <img src="/docs/bad_3.png" alt="No Snake Detected Bad 3" width="250">
+- <img src="/docs/bad_4.png" alt="No Snake Detected Bad 4" width="250">
+The model incorrectly detected a snake due to lack of training examples with toy snakes or similar objects.
+
+🔧 *Recommendation:* Add a new class in the training dataset for **"toy snakes"** or similar misleading objects to reduce false positives and improve accuracy.
+
 ## 🚀 Future Improvements
 - Add heatmap visualization using Grad-CAM.
 - Improve dataset with more balanced class distribution.
