@@ -21,7 +21,14 @@ class HomeScreen extends ConsumerWidget {
     final themeModeController = ref.read(providerThemeMode.notifier);
     ref.listen(providerAnalyzeImageAsync, (previous, next) {
       if( next.isLoading ) return;
-      if( next.hasError ) return;
+      if( next.hasError ) {
+        final messenger = ScaffoldMessenger.of(context);
+        messenger.showSnackBar(SnackBar(
+          content: Text('Unable to connect to the server. Please try again later.'),
+          duration: const Duration(seconds: 3),
+        ));
+        return;
+      }
       if( next.hasValue ) {
         final response = next.value;
         if( response?.className == 'snake' ) {
@@ -142,6 +149,7 @@ class HomeScreen extends ConsumerWidget {
           FadeInRightBig(
             delay: const Duration(milliseconds: 150),
             child: FloatingActionButton.extended(
+              heroTag: 'open-gallery',
               onPressed: () async {
                 final xFile = await ImagePickerUtils.imagePicker();
                 ref.read(providerSelectedImage.notifier).setImage = xFile;
@@ -153,6 +161,7 @@ class HomeScreen extends ConsumerWidget {
           FadeInRightBig(
             delay: const Duration(milliseconds: 300),
             child: FloatingActionButton.extended(
+              heroTag: 'open-camera',
               onPressed: () async {
                 final xFile = await ImagePickerUtils.imagePicker(
                   isGallery: false,
@@ -166,6 +175,7 @@ class HomeScreen extends ConsumerWidget {
           FadeInRightBig(
             delay: const Duration(milliseconds: 450),
             child: FloatingActionButton.extended(
+              heroTag: 'change-theme',
               onPressed: themeModeController.toggleTheme,
               label: const Text('Change Theme'),
               icon: Consumer(

@@ -16,7 +16,11 @@ class AnalyzeImageNotifier extends AsyncNotifier<SnakeDetectorResponse?> {
     if (selectedImage == null) return;
     state = AsyncLoading();
     final api = ref.read(providerApiRepository);
-    final response = await api.detectImage(File(selectedImage.path));
-    state = AsyncData(response);
+    try {
+      final response = await api.detectImage(File(selectedImage.path));
+      state = AsyncData(response);
+    } catch( error ){
+      state = AsyncError(error, StackTrace.current);
+    }
   }
 }

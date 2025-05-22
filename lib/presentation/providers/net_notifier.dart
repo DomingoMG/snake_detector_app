@@ -8,7 +8,8 @@ final providerNetNotifier = NotifierProvider<NetNotifier, Dio>(NetNotifier.new);
 
 class NetNotifier extends Notifier<Dio> {
   final Dio dio = Dio(BaseOptions(
-    baseUrl: Constants.baseUrl
+    baseUrl: Constants.baseUrl,
+    connectTimeout: Duration(seconds: 15),
   ));
 
   @override

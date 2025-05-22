@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:snake_detector/config/themes/theme_dark.dart';
@@ -17,6 +18,7 @@ class MainApp extends ConsumerWidget {
     return MaterialApp.router(
       routerConfig: ref.watch(providerAppNavigation),
       themeMode: themeMode,
+      debugShowCheckedModeBanner: kDebugMode,
       theme: themeMode == ThemeMode.dark 
         ? AppTheme.darkTheme
         : AppTheme.lightTheme,
